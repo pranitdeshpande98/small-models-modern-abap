@@ -1,0 +1,24 @@
+{
+  "name": "small-models-modern-abap",
+  "version": "1.0.0",
+  "description": "Fine-tuning lightweight code LLMs to write clean, modern ABAP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranitdeshpande98/small-models-modern-abap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pranitdeshpande98/small-models-modern-abap/issues"
+  },
+  "homepage": "https://github.com/pranitdeshpande98/small-models-modern-abap#readme",
+  "devDependencies": {
+    "@abaplint/cli": "^2.120.111"
+  }
+}
