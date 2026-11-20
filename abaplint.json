@@ -1,0 +1,54 @@
+{
+  "global": {
+    "files": "/abap_check/src/**/*.*"
+  },
+  "dependencies": [
+    {
+      "url": "https://github.com/abaplint/deps",
+      "folder": "/deps",
+      "files": "/src/**/*.*"
+    }
+  ],
+  "syntax": {
+    "version": { "release": "Newest", "language": "Normal" },
+    "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)"
+  },
+  "rules": {
+    "parser_error":   { "severity": "Error" },
+    "check_syntax":   { "severity": "Error" },
+    "unknown_types":  { "severity": "Error" },
+
+    "prefer_inline":              { "severity": "Warning" },
+    "obsolete_statement": {
+      "severity": "Warning",
+      "refresh": true, "compute": true, "add": true, "subtract": true,
+      "multiply": true, "divide": true, "move": true, "requested": true,
+      "occurs": true, "setExtended": true, "withHeaderLine": true,
+      "fieldSymbolStructure": true, "typePools": true, "load": true,
+      "parameter": true, "ranges": true, "communication": true, "pack": true,
+      "selectWithoutInto": true, "freeMemory": true, "exitFromSQL": true,
+      "sortByFS": true, "callTransformation": true, "regex": true,
+      "occurences": true, "clientSpecified": true, "formDefinition": true,
+      "formImplementation": true, "commonPart": true, "fieldGroups": true,
+      "replaceInto": true, "loopExtract": true, "sortExtract": true
+    },
+    "prefer_string_template":     { "severity": "Warning" },
+    "use_new":                    { "severity": "Warning" },
+    "prefer_xsdbool":             { "severity": "Warning" },
+    "use_line_exists":            { "severity": "Warning" },
+    "prefer_is_not":              { "severity": "Warning" },
+    "preferred_compare_operator": {
+      "severity": "Warning",
+      "badOperators": ["EQ", "><", "NE", "GE", "GT", "LT", "LE"]
+    },
+    "prefer_corresponding":       { "severity": "Warning" },
+    "prefer_insert_into_table":   { "severity": "Warning" },
+    "functional_writing":         { "severity": "Warning", "ignoreExceptions": true },
+    "omit_receiving":             { "severity": "Warning" },
+    "exporting":                  { "severity": "Warning" },
+    "use_class_based_exceptions": { "severity": "Warning" },
+    "prefer_raise_exception_new": { "severity": "Warning" },
+    "sql_escape_host_variables":  { "severity": "Warning" },
+    "strict_sql":                 { "severity": "Warning" }
+  }
+}
